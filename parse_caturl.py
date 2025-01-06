@@ -7,6 +7,7 @@ import re
 import os
 from MySQLDatabase import MySQLDatabase
 
+
 def add_tovar(tovar):
     # CREATE TABLE `market_cheks`.`wb_tovars` (
     # `id` INT NOT NULL AUTO_INCREMENT ,
@@ -38,18 +39,17 @@ def add_tovar(tovar):
                 db.insert_query(
                     f"INSERT INTO {table_hp} (id_tovar, id_item, price_cur) VALUES (%s, %s, %s)",
                     value_to_insert)
-        else:
-            value_to_insert = (
-                tovar['label'],
-                tovar['price_cur'],
-                tovar['price_old'],
-                tovar['link'],
-                tovar['pricev'],
-                tovar['id_item']
-            )
-            db.insert_query(f"INSERT INTO {table} (label, price_cur, price_old, link, price_val, id_item) VALUES (%s, %s, %s, %s, %s, %s)",value_to_insert)
-    # db.update_query("UPDATE your_table SET column1='new_value' WHERE id=1")
-    # db.delete_query("DELETE FROM your_table WHERE id=1")
+    else:
+        value_to_insert = (
+            tovar['label'],
+            tovar['price_cur'],
+            tovar['price_old'],
+            tovar['link'],
+            tovar['pricev'],
+            tovar['id_item']
+        )
+        db.insert_query(f"INSERT INTO {table} (label, price_cur, price_old, link, price_val, id_item) VALUES (%s, %s, %s, %s, %s, %s)",value_to_insert)
+
     db.close_connection()
 
 def parse_text(driver1, type, type_text, get_type, get_what):
@@ -62,6 +62,7 @@ def parse_text(driver1, type, type_text, get_type, get_what):
     except(NoSuchElementException):
         pass
     return value
+
 
 def parse_price_str(text):
     price = {'price':0,'cur':''}
@@ -81,6 +82,7 @@ def url_get_id(url):
         product_id = 0
 
     return product_id
+
 
 def tovars_parse(url, razdel):
     driver = webdriver.Chrome()
@@ -138,17 +140,8 @@ def tovars_parse(url, razdel):
 
     driver.quit()
 
-razdel = 'Ноутбуки и ультрабуки'
-url = 'https://www.wildberries.ru/catalog/elektronika/noutbuki-pereferiya/noutbuki-ultrabuki'
+# razdel = 'Ноутбуки и ультрабуки'
+# url = 'https://www.wildberries.ru/catalog/elektronika/noutbuki-pereferiya/noutbuki-ultrabuki'
+razdel = 'Телефоны от 10000'
+url = 'https://www.wildberries.ru/catalog/elektronika/telefony-i-gadzhety/mobilnye-telefony?page=1&sort=priceup&priceU=2000000%3B9000000'
 tovars_parse(url, razdel)
-
-
-# tovar_cur = {
-#     'price_cur': 230.5,
-#     'price_old': 250,
-#     'label': "Ноутбук ва 'asd'",
-#     'pricev': "RUB",
-#     'link': "https://www.wildberries.ru/catalog/elektronika/noutbuki-pereferiya/noutbuki-ultrabuki",
-#     'id_item': 33
-# }
-# add_tovar(tovar_cur)

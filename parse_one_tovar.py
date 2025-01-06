@@ -5,7 +5,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import re
-from time import sleep
+import schedule
+import time
 
 """
 Получение товаров из таблицы и проверка текущей цены
@@ -25,6 +26,7 @@ def parse_text(driver1, type, type_text, get_type, get_what):
 
 
 def parse_price_str(text):
+    """Получение из строки цены и валюты"""
     price = {'price':0,'cur':''}
     match = re.search(r"([\d\s]+)\s*([₽$€¥£])", text)
     if match:
@@ -35,6 +37,7 @@ def parse_price_str(text):
 
 
 def check_price(url):
+    """На странице ищем цену и возвращаем"""
     tmp = {
         'price': -1,
         'cur': ''
@@ -69,6 +72,10 @@ def check_price(url):
 
 
 def tovars_get():
+    """
+    Получение товаров из таблицы и проверка цены каждого,
+    если цена отличается сохраняем цену в историю
+    """
     table = "wb_tovars"
     table_hp = "wb_tovars_hp"
     db = MySQLDatabase(host="localhost", user="root", password="", database="market_cheks")
@@ -104,4 +111,12 @@ def tovars_get():
                 else:
                     print(f"Цена не определилась")
 
-tovars_get()
+def job():
+    """Выполнение скрипта в таймере"""
+    tovars_get()
+
+schedule.every(15).minutes.do(job)
+
+while True:
+    schedule.run_pending()
+    time.sleep(1)

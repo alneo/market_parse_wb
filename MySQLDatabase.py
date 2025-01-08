@@ -73,6 +73,9 @@ class MySQLDatabase:
                 self.cursor.execute(sql, value_to_insert)
                 self.connection.commit()
                 # print("Записи добавлены.")
+                # Получить ID вставленной записи
+                inserted_id = self.cursor.lastrowid
+                return inserted_id
             except MySQLdb.Error as err:
                 print(f"Ошибка добавления записей: {err}")
                 self.connection.rollback()

@@ -90,8 +90,6 @@ https://basket-14.wbbasket.ru/vol2163/part216373/216373122/info/price-history.js
 https://basket-12.wbbasket.ru/vol1868/part186893/186893094/info/price-history.json
 [{"dt":1726358400,"price":{"RUB":1832100}}]
 """
-
-
 from WB_tovar import WB_tovar
 
 WB = WB_tovar()
@@ -103,7 +101,7 @@ tovars = WB.get_json_tovars_list(
 )
 if tovars is not None:
     for tovar in tovars['data']['products']:
-        print(tovar)
+        WB.tovar_add_table(tovar=tovar)
 
 
 

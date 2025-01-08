@@ -43,8 +43,9 @@ def check_price(url):
         'cur': ''
     }
     options = webdriver.ChromeOptions()
-    options.add_argument("--headless=new")  # Запуск в headless режиме
-    driver = webdriver.Chrome()  # options=options
+    #options.add_argument("--headless=new")  # Запуск в headless режиме
+    options.add_argument("--window-position=-32000,-32000")  # Запуск в headless режиме
+    driver = webdriver.Chrome(options=options)  # options=options
     driver.get(url)
     wait = WebDriverWait(driver, 30)
     try:
@@ -120,3 +121,5 @@ schedule.every(15).minutes.do(job)
 while True:
     schedule.run_pending()
     time.sleep(1)
+
+# tmp = check_price("https://www.wildberries.ru/catalog/217782907/detail.aspx")

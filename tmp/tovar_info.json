@@ -1,0 +1,81 @@
+{
+  "state": 0,
+  "payloadVersion": 2,
+  "data": {
+    "products": [
+      {
+        "id": 216373122,
+        "root": 195233959,
+        "kindId": 0,
+        "brand": "Xiaomi",
+        "brandId": 19467,
+        "siteBrandId": 0,
+        "colors": [
+          {
+            "name": "черный",
+            "id": 0
+          }
+        ],
+        "subjectId": 516,
+        "subjectParentId": 6258,
+        "name": "Смартфон Redmi Note 10 Pro 8 256 ГБ, черное",
+        "entity": "Мобильные телефоны",
+        "matchId": 0,
+        "supplier": "Annuan",
+        "supplierId": 4041903,
+        "supplierRating": 4.4,
+        "supplierFlags": 0,
+        "pics": 5,
+        "rating": 5,
+        "reviewRating": 5,
+        "nmReviewRating": 5,
+        "feedbacks": 1,
+        "nmFeedbacks": 1,
+        "volume": 28,
+        "viewFlags": 8,
+        "promotions": [
+          63484,
+          175090,
+          179800,
+          188713
+        ],
+        "sizes": [
+          {
+            "name": "",
+            "origName": "0",
+            "rank": 0,
+            "optionId": 344942721,
+            "stocks": [
+              {
+                "wh": 326006,
+                "dtype": 33,
+                "qty": 6,
+                "priority": 25426,
+                "time1": 600,
+                "time2": 20
+              }
+            ],
+            "time1": 600,
+            "time2": 20,
+            "wh": 326006,
+            "dtype": 33,
+            "price": {
+              "basic": 3994100,
+              "product": 2076900,
+              "total": 2076900,
+              "logistics": 0,
+              "return": 150000
+            },
+            "saleConditions": 134217730,
+            "payload": "yX/JLPqXT8j6AumD93rjSn4MDWNEg6HpUNsz1Qy3t3d5WDXZkDMl5Jc5fY/5nIuJPFKBRXqh/JQS3T1xlw"
+          }
+        ],
+        "totalQuantity": 6,
+        "time1": 600,
+        "time2": 20,
+        "wh": 326006,
+        "dtype": 33
+      }
+    ]
+  }
+}

@@ -1,0 +1,207 @@
+{
+    "state": 0,
+    "payloadVersion": 2,
+    "data": {
+        "products": [
+            {
+                "id": 186893094,
+                "root": 170089687,
+                "kindId": 0,
+                "brand": "Blackview",
+                "brandId": 24840,
+                "siteBrandId": 0,
+                "colors": [
+                    {
+                        "name": "черный",
+                        "id": 0
+                    }
+                ],
+                "subjectId": 516,
+                "subjectParentId": 6258,
+                "name": "Смартфон A200 Pro AMOLED 12 256 ГБ, черный",
+                "entity": "Мобильные телефоны",
+                "matchId": 0,
+                "supplier": "LARS Electronics",
+                "supplierId": 1210551,
+                "supplierRating": 4.7,
+                "supplierFlags": 0,
+                "pics": 23,
+                "rating": 5,
+                "reviewRating": 5,
+                "nmReviewRating": 5,
+                "feedbacks": 10,
+                "nmFeedbacks": 6,
+                "volume": 8,
+                "viewFlags": 1679376,
+                "promotions": [
+                    63484,
+                    163950,
+                    186384,
+                    186385,
+                    186927,
+                    188713
+                ],
+                "sizes": [
+                    {
+                        "name": "",
+                        "origName": "0",
+                        "rank": 0,
+                        "optionId": 306659869,
+                        "stocks": [
+                            {
+                                "wh": 507,
+                                "dtype": 4,
+                                "qty": 2,
+                                "priority": 89990,
+                                "time1": 2,
+                                "time2": 21
+                            }
+                        ],
+                        "time1": 2,
+                        "time2": 21,
+                        "wh": 507,
+                        "dtype": 4,
+                        "price": {
+                            "basic": 3599000,
+                            "product": 2058600,
+                            "total": 2058600,
+                            "logistics": 0,
+                            "return": 0
+                        },
+                        "saleConditions": 134217730,
+                        "payload": "6Dj7WLVbswwQXYTElWhM7WgFMyEu9D4G3W4vqsgVwMef6uqNuG6zm+U3XtSfGs3EEekl2Dc5OBykE70IIA"
+                    }
+                ],
+                "totalQuantity": 2,
+                "time1": 2,
+                "time2": 21,
+                "wh": 507,
+                "dtype": 4
+            },
+            {
+                "id": 229441701,
+                "root": 170089687,
+                "kindId": 0,
+                "brand": "Blackview",
+                "brandId": 24840,
+                "siteBrandId": 0,
+                "colors": [
+                    {
+                        "name": "серый",
+                        "id": 8421504
+                    }
+                ],
+                "subjectId": 516,
+                "subjectParentId": 6258,
+                "name": "4G-смартфон SHARK 8, 8 ГБ+256 ГБ, Android13, черный",
+                "entity": "Мобильные телефоны",
+                "matchId": 0,
+                "supplier": "LARS Electronics",
+                "supplierId": 1210551,
+                "supplierRating": 4.7,
+                "supplierFlags": 0,
+                "pics": 17,
+                "rating": 5,
+                "reviewRating": 5,
+                "nmReviewRating": 5,
+                "feedbacks": 10,
+                "nmFeedbacks": 4,
+                "volume": 38,
+                "viewFlags": 1679376,
+                "promotions": [
+                    63484,
+                    186927
+                ],
+                "sizes": [
+                    {
+                        "name": "",
+                        "origName": "0",
+                        "rank": 0,
+                        "optionId": 362543726,
+                        "stocks": []
+                    }
+                ],
+                "totalQuantity": 0
+            },
+            {
+                "id": 302192278,
+                "root": 170089687,
+                "kindId": 0,
+                "brand": "Blackview",
+                "brandId": 24840,
+                "siteBrandId": 0,
+                "colors": [
+                    {
+                        "name": "синий",
+                        "id": 255
+                    }
+                ],
+                "subjectId": 516,
+                "subjectParentId": 6258,
+                "name": "Смартфон A200 Pro AMOLED 12 256 ГБ, синий",
+                "entity": "Мобильные телефоны",
+                "matchId": 0,
+                "supplier": "LARS Electronics",
+                "supplierId": 1210551,
+                "supplierRating": 4.7,
+                "supplierFlags": 0,
+                "pics": 18,
+                "rating": 5,
+                "reviewRating": 5,
+                "nmReviewRating": 0,
+                "feedbacks": 10,
+                "nmFeedbacks": 0,
+                "panelPromoId": 195700,
+                "promoTextCard": "НГ НА ВБ",
+                "promoTextCat": "НГ НА ВБ",
+                "volume": 8,
+                "viewFlags": 1679362,
+                "isNew": true,
+                "promotions": [
+                    63484,
+                    163950,
+                    186384,
+                    186385,
+                    193792,
+                    195700
+                ],
+                "sizes": [
+                    {
+                        "name": "",
+                        "origName": "0",
+                        "rank": 0,
+                        "optionId": 459121980,
+                        "stocks": [
+                            {
+                                "wh": 507,
+                                "dtype": 4,
+                                "qty": 1,
+                                "priority": 89990,
+                                "time1": 2,
+                                "time2": 21
+                            }
+                        ],
+                        "time1": 2,
+                        "time2": 21,
+                        "wh": 507,
+                        "dtype": 4,
+                        "price": {
+                            "basic": 3599000,
+                            "product": 2502000,
+                            "total": 2502000,
+                            "logistics": 0,
+                            "return": 0
+                        },
+                        "saleConditions": 134217730,
+                        "payload": "5g5KXDvzyvcFUpxxctGVbC6WKtswy5OOI1/kepiGv+Eh2gx1Szr4lC+djjRF3FSreV8hlnFF0CORPI0J/A"
+                    }
+                ],
+                "totalQuantity": 1,
+                "time1": 2,
+                "time2": 21,
+                "wh": 507,
+                "dtype": 4
+            }
+        ]
+    }
+}
